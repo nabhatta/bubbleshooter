@@ -105,7 +105,7 @@ class Fish extends Phaser.Scene {
         this.healthBarFill = this.add.rectangle(630, 575, 150, 20, 0x00ff00).setOrigin(0, 0.5);
 
         // update HTML description
-        document.getElementById('description').innerHTML = '<h2>Bubble Shooter</h2>'
+        document.getElementById('description').innerHTML = '<h2>Bubble Shooter</h2> <br>A to go left, D to go right, SPACE to shoot'
 
         this.highScore = parseInt(localStorage.getItem("highScore")) || 0;
         localStorage.setItem("highScore", this.highScore);
